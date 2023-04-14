@@ -1,6 +1,6 @@
 # USB Camera
 
-### Navigation:
+# Navigation:
 <Esc>                         - Exit Program
 <Mouse Double Left Click>     - Zoom x2
 <q>                           - Exit Zoom
