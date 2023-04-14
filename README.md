@@ -1,5 +1,4 @@
-# usbcamera
-USB Camera
+## USB Camera
 
 # Navigation:
 <Esc>                         - Exit Program
