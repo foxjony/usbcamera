@@ -1,4 +1,7 @@
-# USB 2.0 Camera 4MP (RGB Video 2560x1440, 30 frames) (Monitor 1920x1080)
+# USB 2.0 Camera 2K 4MP (RGB Video 2560x1440, 30 fps) (MCU F5253) ($36)
+# USB 2.0 Camera 4K 8MP (RGB Video 3840x2160, 30 fps) (MCU IMX415) ($63)
+# 5-50mm Lens
+# https://a.aliexpress.com/_EutRLJ5
 
 # https://www.youtube.com/watch?v=lM8DNAKpuBc
 # https://youtrack.jetbrains.com/issue/IDEA-278224/Failed-to-start-powershell-cmd-on-windows
@@ -14,6 +17,7 @@
 # <p>                           - Add Red Center
 # <o>                           - Add Green Circle
 # <i>                           - Clear Center end Circle
+# Monitor 1920x1080
 
 import numpy as np
 import cv2
