@@ -1,4 +1,4 @@
-# USB Camera
+# USB Camera (Python)
 
 # Navigation:
 - Esc                         - Exit Program
