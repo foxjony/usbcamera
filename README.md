@@ -4,11 +4,10 @@
 - https://a.aliexpress.com/_EutRLJ5
 
 # Navigation:
+Monitor 1920x1080
 - Esc                         - Exit Program
 - Mouse Double Left Click     - Zoom x2
 - q                           - Exit Zoom
 - p                           - Add Red Center
 - o                           - Add Green Circle
 - i                           - Clear Center end Circle
-
-# Monitor 1920x1080 
