@@ -1,5 +1,6 @@
 # USB Camera (Python)
-- USB 2.0 Camera 4MP (RGB Video 2560x1440, 30 frames) (Monitor 1920x1080)
+- USB 2.0 Camera 2K 4MP (RGB Video 2560x1440, 30 fps) (MCU F5253)
+- USB 2.0 Camera 4K 8MP (RGB Video 3840x2160, 30 fps) (MCU IMX415)
 - https://a.aliexpress.com/_EutRLJ5
 
 # Navigation:
@@ -9,3 +10,5 @@
 - p                           - Add Red Center
 - o                           - Add Green Circle
 - i                           - Clear Center end Circle
+
+# Monitor 1920x1080
