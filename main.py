@@ -60,7 +60,15 @@ def zoomout():
     ret, img = cap.read()
     cv2.imshow('frame', img)
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+#cap2 = cv2.VideoCapture(0, cv2.CAP_DSHOW)      # Camera 2
+
+#cap2.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+#cap2.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+#cv2.namedWindow('frame2', cv2.WINDOW_NORMAL)
+#cv2.resizeWindow('frame2', 640, 480)
+
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)        # Camera 1
 
 #cap.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 #cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
@@ -81,11 +89,12 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 2560)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1440)
 
 cv2.namedWindow('frame', cv2.WINDOW_NORMAL)
-cv2.resizeWindow('frame', 1920, 1000)
+cv2.resizeWindow('frame', 2560, 1440)
 
 while True:
     cv2.setMouseCallback('frame', mousecall)
     ret, frame = cap.read()
+    #ret, frame2 = cap2.read()
 
     if p == 1:
         cv2.line(frame, (1280, 730), (1280, 740), (0, 0, 255), 1)
@@ -96,13 +105,15 @@ while True:
     if o == 1: cv2.circle(frame, (1280, 720), 40, (0, 255, 0), 1)
 
     cv2.imshow('frame', frame)
+    #cv2.imshow('frame2', frame2)
 
     key = cv2.waitKey(1)
     if key & 0xFF == ord('p'): p = 1
     elif key & 0xFF == ord('o'): o = 1
     elif key & 0xFF == ord('i'): p = 0; o = 0
-    elif key & 0xFF == 27: break
+    if key & 0xFF == 27: break
 
 print('Resolution: '+str(frame.shape[1])+' x '+str(frame.shape[0]))
+#print('Resolution: '+str(frame2.shape[1])+' x '+str(frame2.shape[0]))
 cap.release()
 cv2.destroyAllWindows()
