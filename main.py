@@ -60,7 +60,7 @@ def zoomout():
     ret, img = cap.read()
     cv2.imshow('frame', img)
 
-#cap2 = cv2.VideoCapture(0, cv2.CAP_DSHOW)      # Camera 2
+#cap2 = cv2.VideoCapture(1, cv2.CAP_DSHOW)      # Camera 2
 
 #cap2.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 #cap2.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
@@ -68,7 +68,7 @@ def zoomout():
 #cv2.namedWindow('frame2', cv2.WINDOW_NORMAL)
 #cv2.resizeWindow('frame2', 640, 480)
 
-cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)        # Camera 1
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)        # Camera 1
 
 #cap.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 #cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
